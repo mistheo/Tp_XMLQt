@@ -12,7 +12,7 @@
 #include <QDebug>
 #include <QVector>
 
-int famille()
+int EcritureFamilleXML()
 {
     // ouverture du fichier XML
     QString nomFichierXML = "famille.xml";
@@ -73,18 +73,18 @@ int famille()
 
     return 0;
 }
-int films()
+int LectureFilmsXML()
 {
     QString nomFichierXML = "../XML_Qt/films.xml";
-    QFile fichierXML(nomFichierXML);
-
+    QFile FichierXML(nomFichierXML);
+    QXmlStreamReader reader(&FichierXML);
+    QXmlStreamAttributes attributes;
     struct Realisateur
     {
         QString nom;
         QString prenom;
         QString annee_naissance;
     };
-
     struct Film{
         QString Titre;
         QString annee;
@@ -92,6 +92,16 @@ int films()
         Realisateur realisateur;
         QString resume;
     };
+
+
+    if (!FichierXML.open(QIODevice::WriteOnly))
+    {
+        qDebug() << "--- Erreur : probleme ouverture fichier FilmsXML";
+        return 1;
+    }
+    qDebug() << "> Ouverture du fichier: " << nomFichierXML;
+
+    reader.a
 
     QVector<Film> Films;
 
@@ -103,8 +113,8 @@ int films()
 int main()
 {
 
-    //famille();
-    films();
+    //EcritureFamilleXML();
+    LectureFilmsXML();
 
 
     return 0;
