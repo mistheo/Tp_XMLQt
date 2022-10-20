@@ -75,8 +75,9 @@ int famille()
 }
 int films()
 {
-    QString nomFichierXML = "films.xml";
+    QString nomFichierXML = "../XML_Qt/films.xml";
     QFile fichierXML(nomFichierXML);
+
     struct Realisateur
     {
         QString nom;

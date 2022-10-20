@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Document XML des films -->
+<Films>
+	<Film>
+		<Titre>Sleepy Hollow</Titre>
+		<Annee>1999</Annee>
+		<CodePay>1</CodePay>
+		<Genre>Fantastique</Genre>
+		<Realisateur prenom="Tim" nom="Burton" date_de_naissance="1958"></Realisateur>
+		<Resume>
+				Nouvelle Angleterre, 1799. A Sleepy Hollow, plusieurs cadavres sont retrouvés décapités. 
+				La rumeur attribue ces meurtres à un cavalier lui-même sans tête. 
+				Mais le fin limier new-yorkais Ichabod Crane ne croit pas en ses aberrations. 
+				Tombé sous le charme de la vénéneuse Katrina, il mène son enquête au coeur des sortilèges de Sleepy Hollow.
+		</Resume>
+	</Film>
+	
+	<Film>
+		<Titre>Sanglantes Confessions</Titre>
+		<Annee>1981</Annee>
+		<CodePay>1</CodePay>
+		<Genre>Fantastique</Genre>
+		<Realisateur prenom="Ulu" nom=" Grosbard" date_de_naissance="NULL"></Realisateur>
+		<Resume>
+				Desmond et Tom Spellacy sont deux frères. Le premier, Desmond, est chancelier d'un archidiocèse dont la principale activité est de s'octroyer les bonnes grâces de généreux - et riches - donateurs. 
+				Tom, quant à lui, est un inspecteur de police intègre et coriace qui enquête sur le meurtre barbare d'une jeune prostituée. 
+				Rapidement, l'enquête de Tom le met sur la piste de Jack Amsterdam, un important bienfaiteur de l'église, ami de Desmond et couronné "Homme Catholique de l'année". 
+				Tom demande à son frère de l'aider dans sa quête de la vérité.
+		</Resume>
+	</Film>
+</Films>
